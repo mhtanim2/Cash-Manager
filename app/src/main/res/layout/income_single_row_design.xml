@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/alart_back"
+    android:elevation="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dateTxtIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:drawableLeft="@drawable/schedule"
+            android:hint="6 June 2018"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#131313"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/noteTxtIncome"
+            app:layout_constraintTop_toBottomOf="@+id/noteTxtIncome"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/typeTxtIncome"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/notes"
+            android:gravity="left"
+            android:hint="Type"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ammountTxtIncome"
+            app:layout_constraintTop_toTopOf="@+id/ammountTxtIncome" />
+
+        <TextView
+            android:id="@+id/noteTxtIncome"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/types"
+            android:gravity="left"
+            android:hint="Description"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/ammountTxtIncome"
+            app:layout_constraintEnd_toEndOf="@+id/typeTxtIncome"
+            app:layout_constraintStart_toStartOf="@+id/typeTxtIncome"
+            app:layout_constraintTop_toBottomOf="@+id/typeTxtIncome"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/ammountTxtIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:drawableTop="@drawable/incomevalue"
+            android:gravity="center"
+            android:hint="600000"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#03EA03"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/updateIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alart_back"
+            app:layout_constraintBottom_toBottomOf="@+id/typeTxtIncome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/typeTxtIncome"
+            app:layout_constraintTop_toTopOf="@+id/typeTxtIncome"
+            app:srcCompat="@drawable/update" />
+
+        <ImageView
+            android:id="@+id/deleteIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alart_back"
+            app:layout_constraintBottom_toBottomOf="@+id/noteTxtIncome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/noteTxtIncome"
+            app:layout_constraintTop_toTopOf="@+id/noteTxtIncome"
+            app:srcCompat="@drawable/delete" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
